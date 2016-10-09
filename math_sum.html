@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<pre>
+
+	Goal:
+
+Build a funciton for sum(range(1,6))
+
+example: 
+	sum(range(1,6))
+	1 + 2 + 3 + 4 + 5 + 6 = 21
+	
+	</pre>
+
+
+	<script>
+
+
+
+//------------------- Method 1 by looping -------------
+// 1 + 2 + 3 + 4 + 5 + 6 = 21
+
+	sumRange(1,6); //play on words
+
+	function sumRange(min,max){
+		var total = 0;
+
+		for (min; min <= max; min ++){
+			total = total + min;
+		}
+		return total;
+	}
+
+
+//------------------- Method 2 by adding first and last
+// example: (1,6):  1,2,3,4,5,6
+// adding first and last numbers:  1 + 6 = 7
+// adding second and second last:  2 + 5 = 7
+// adding third and third to last: 3 + 4 = 7
+// notice the pattern?
+// total 7 + 7 + 7 = 21
+	
+	someRange(1,6); //play on words
+
+	function someRange(min,max){
+		var total;
+		range = ((max - min) + 1) / 2;
+
+		if (range % 2 === 0){
+			//range is and even number
+			total = (max + min) * numbers;
+		} else {
+			//range is an odd number
+			var middleNumber = (max + min) / 2
+			total = (max - min) / 2 * (max + min) + middleNumber;
+		}
+		return(total);
+	}
+
+	</script>
+</body>
+</html>
